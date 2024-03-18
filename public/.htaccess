@@ -1,0 +1,9 @@
+RewriteEngine On
+#RewriteBase /emrisSpravaSkladu/
+Options -Indexes
+##DirectoryIndex index.php
+#
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+#RewriteRule ^(.*)$ /emrisSpravaSkladu/public/index.php [QSA,L]
